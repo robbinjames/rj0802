@@ -27,9 +27,6 @@ public class BillingSpec {
     }
 
     public BigDecimal calculateRentalPrice(){
-
-        System.out.println(discountPercentage);
-        System.out.println(rentalDays);
         double multiplier = rentalDays * (discountPercentage/100);
 
         priceBeforeDicount = toolDailyPrice.multiply(BigDecimal.valueOf(rentalDays));
